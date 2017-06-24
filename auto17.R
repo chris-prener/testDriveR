@@ -2,13 +2,14 @@
 # source - https://www.fueleconomy.gov/feg/download.shtml
 
 # dependencies
-library(dplyr)
+library(dplyr)     # data cleaning
+library(stringr)   # working with strings
 
 # load raw data
-autoFull17 <- read.csv("autoFull17.csv", stringsAsFactors = FALSE)
+auto17 <- read.csv("autoFull17.csv", stringsAsFactors = FALSE)
 
 # select and rename variables
-auto17 <- autoFull17 %>%
+auto17 %<>%
   select(EPA.FE.Label.Dataset.ID, Mfr.Name, Division, Carline, 
          Carline.Class, Carline.Class.Desc, 
          City.FE..Guide....Conventional.Fuel, 
@@ -40,3 +41,25 @@ auto17 <- autoFull17 %>%
   rename(driveStr = Drive.Sys) %>%
   rename(driveStr2 = Drive.Desc)
   
+# remove duplicates and re-order rows
+auto17 %<>%
+  filter(is.na(id) == FALSE) %>%
+  arrange(mfr, mfrDivision, carLine)
+
+# adjust inconsistent capitalization
+auto17 %<>%
+  mutate(mfr = ifelse(mfr == "BMW" | mfr == "FCA US LLC", mfr, str_to_title(mfr))) %>%
+  mutate(mfrDivision = ifelse(mfr == "BMW" | mfrDivision == "GMC", 
+                              mfrDivision, str_to_title(mfrDivision)))
+
+# adjust inconsistent manufacturer and division data
+auto17 %<>%
+  mutate(mfr = ifelse(mfr == "Aston Martin" | 
+                        mfr == "Ferrari" |
+                        mfr == "Hyundai" |
+                        mfr == "Kia", mfrDivision, mfr)) %>%
+  mutate(mfrDivision = ifelse(str_detect(mfr, "Aston Martin") == TRUE, "Aston Martin", mfrDivision)) %>%
+  mutate(mfrDivision = ifelse(str_detect(mfr, "Ferrari") == TRUE, "Ferrari", mfrDivision)) %>%
+  mutate(mfrDivision = ifelse(str_detect(mfr, "Hyundai") == TRUE, "Hyundai", mfrDivision)) %>%
+  mutate(mfr = ifelse(mfr == "Jaguar Land Rover L", "Jaguar Land Rover Ltd", mfr)) %>%
+  mutate(mfrDivision = ifelse(str_detect(mfr, "Kia") == TRUE, "Kia", mfrDivision))
