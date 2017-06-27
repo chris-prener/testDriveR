@@ -56,8 +56,9 @@ auto17 %<>%
 auto17 %<>%
   mutate(mfr = ifelse(id == 20825, "General Motors", mfr)) %>%
   mutate(mfr = ifelse(mfr == "Jaguar Land Rover L", "Jaguar Land Rover Ltd", mfr)) %>%
+  mutate(mfr = ifelse(mfr == "Mclaren Automotive", "McLaren Automotive", mfr)) %>%
   mutate(mfr = ifelse(str_detect(mfr, "Volkswagen Group Of") == TRUE, 
-                      "Volkswagen Group of America", mfrDivision)) %>%
+                      "Volkswagen Group of America", mfr)) %>%
   mutate(mfr = ifelse(str_detect(mfr, "Volvo") == TRUE, 
                       str_replace(mfr, "Llc", "LLC"), mfr)) %>%
   mutate(mfr = ifelse(mfr == "Aston Martin" | mfr == "Ferrari" | mfr == "Hyundai" | 
@@ -68,30 +69,39 @@ auto17 %<>%
   mutate(mfrDivision = ifelse(str_detect(mfr, "Hyundai") == TRUE, "Hyundai", mfrDivision)) %>%
   mutate(mfrDivision = ifelse(str_detect(mfr, "Kia") == TRUE, "Kia", mfrDivision)) %>%
   mutate(mfrDivision = ifelse(str_detect(mfr, "Lotus") == TRUE, "Lotus", mfrDivision)) %>%
+  mutate(mfrDivision = ifelse(str_detect(mfr, "McLaren") == TRUE, "McLaren", mfrDivision)) %>%
   mutate(mfrDivision = ifelse(str_detect(mfr, "Mitsubishi") == TRUE, "Mitsubishi", mfrDivision)) %>%
   mutate(mfrDivision = ifelse(str_detect(mfr, "Rolls-Royce") == TRUE, "Rolls-Royce", mfrDivision)) %>%
   mutate(mfrDivision = ifelse(str_detect(mfr, "Roush") == TRUE, "Roush", mfrDivision)) %>%
   mutate(mfrDivision = ifelse(str_detect(mfr, "Volvo") == TRUE, "Volvo", mfrDivision)) %>%
   arrange(mfr, mfrDivision, carLine)
 
-# GM cars are not listed under same mfr - need to fix
-
 # adjust carline names to title case
 auto17 %<>%
   mutate(carLine = ifelse(mfrDivision == "Buick" | mfrDivision == "Chevrolet" | 
-                            mfrDivision == "Ford", 
+                            mfrDivision == "Ford" | mfrDivision == "Mini" | 
+                            mfrDivision == "GMC" | mfrDivision == "Honda" |
+                            mfrDivision == "Maserati", 
                           str_to_title(carLine), carLine)) %>%
   mutate(carLine = ifelse(mfrDivision == "Buick" | mfrDivision == "Chevrolet" | 
-                            mfrDivision == "Ford",  
+                            mfrDivision == "Ford" | mfrDivision == "GMC" |
+                            mfrDivision == "Honda" | mfrDivision == "Maserati",  
                           str_replace(carLine, "Awd", "AWD"), carLine)) %>%
   mutate(carLine = ifelse(mfrDivision == "Buick" | mfrDivision == "Chevrolet" | 
-                            mfrDivision == "Ford",  
+                            mfrDivision == "Ford" | mfrDivision == "GMC" |
+                            mfrDivision == "Honda",  
                           str_replace(carLine, "Fwd", "FWD"), carLine)) %>%
-  mutate(carLine = ifelse(mfrDivision == "Chevrolet" | mfrDivision == "Ford",  
+  mutate(carLine = ifelse(mfrDivision == "Maserati",  
+                          str_replace(carLine, "Rwd", "RWD"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Chevrolet" | mfrDivision == "Ford" | 
+                            mfrDivision == "GMC",  
                           str_replace(carLine, "2Wd", ""), carLine)) %>%
-  mutate(carLine = ifelse(mfrDivision == "Chevrolet" | mfrDivision == "Ford", 
+  mutate(carLine = ifelse(mfrDivision == "Chevrolet" | mfrDivision == "Ford" | 
+                            mfrDivision == "GMC", 
                           str_replace(carLine, "4Wd", "FWD"), carLine)) %>%
   mutate(carLine = ifelse(mfrDivision == "Chevrolet" & carLine == "Ss", "SS", carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Chevrolet" | mfrDivision == "GMC", 
+                          str_replace(carLine, "Mdpv", "MDPV"), carLine)) %>%
   mutate(carLine = ifelse(mfrDivision == "Ferrari", 
                           str_replace(carLine, "gtb", "GTB"), carLine)) %>%
   mutate(carLine = ifelse(mfrDivision == "Ferrari", 
@@ -112,13 +122,40 @@ auto17 %<>%
                           str_replace(carLine, "St", "ST"), carLine)) %>%
   mutate(carLine = ifelse(mfrDivision == "Ford", 
                           str_replace(carLine, "Rs", "RS"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "GMC", 
+                          str_replace(carLine, "Xl", "XL"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Honda", 
+                          str_replace(carLine, "Cr-V", "CR-V"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Honda", 
+                          str_replace(carLine, "Hr-V", "HR-V"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Honda", 
+                          str_replace(carLine, "Dr", " Door"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Hyundai", 
+                          str_replace(carLine, "ULTIMATE", "Ultimate"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Hyundai", 
+                          str_replace(carLine, "SPORT", "Sport"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Hyundai", 
+                          str_replace(carLine, "LIMITED", "Limited"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Lincoln", 
+                          str_replace(carLine, "CONTINENTAL", "Continental"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Maserati", 
+                          str_replace(carLine, "Gts", "GTS"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Maserati", 
+                          str_replace(carLine, "Sq4", "SQ4"), carLine)) %>%
+  mutate(carLine = ifelse(mfrDivision == "Mazda", 
+                          str_replace(carLine, "-Door", " Door"), carLine)) %>%
   mutate(carLine = ifelse(id == 20046, "Escalade", carLine)) %>%
   mutate(carLine = ifelse(id == 20132, "Escalade FWD", carLine)) %>%
   mutate(carLine = ifelse(id == 20237, "XTS Hearse", carLine)) %>%
   mutate(carLine = ifelse(id == 20105, "XTS Limo", carLine)) %>%
+  mutate(carLine = ifelse(id == 21149, str_replace(carLine, "LIVERY", "Livery"), carLine)) %>%
+  mutate(carLine = ifelse(id == 19668, str_replace(carLine, "HYBRID", "Hybrid"), carLine)) %>%
+  mutate(carLine = ifelse(id == 20138, "Ghibli V6 RWD", carLine)) %>%
   mutate(carLine = ifelse(id == 20903, word(carLine, 1, 2), carLine)) %>%
   mutate(carLine = ifelse(id == 20906, word(carLine, 1, 3), carLine)) %>%
   mutate(carLine = ifelse(id == 20977, word(carLine, 1, 2), carLine)) %>%
   mutate(carLine = ifelse(id == 20988, word(carLine, 1, 3), carLine)) %>%
   mutate(carLine = ifelse(id == 20961, word(carLine, 1, 3), carLine)) %>%
   mutate(carLine = ifelse(id == 20963, word(carLine, 1, 4), carLine))
+
+# left off at mercedes 
