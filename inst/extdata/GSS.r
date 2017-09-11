@@ -65,3 +65,7 @@ GSS %<>%
   mutate(HRS2 = ifelse(HRS2 == -1 | SPHRS2 >= 90, NA, HRS2)) %>%
   mutate(WRKSTAT = ifelse(WRKSTAT == 9, NA, WRKSTAT)) %>%
   mutate(INCOME16 = ifelse(INCOME16 == 0 | INCOME16 == 27 | INCOME16 == 98, NA, INCOME16))
+
+## export data objects
+save(GSS, file="gss17.RData")
+save(GSS_MISS, file="gss17_Miss.RData")
