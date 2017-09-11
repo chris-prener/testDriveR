@@ -38,8 +38,8 @@ data(auto17)
 A data set containing model year 2017 vehicles for sale in the United States.
 }
 \examples{
-str(stlMurders)
-head(stlMurders)
+str(auto17)
+head(auto17)
 
 }
 \keyword{datasets}
