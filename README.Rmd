@@ -26,7 +26,7 @@ devtools::install_github("chris-prener/testDriveR")
 ```
 
 ## Current Data
-The package currently contains one data table:
+The package currently contains three data tables:
 
 * `auto17` - A data set containing model year 2017 vehicles for sale in the United States
 
