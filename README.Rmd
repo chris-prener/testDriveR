@@ -12,25 +12,34 @@ knitr::opts_chunk$set(
 )
 ```
 
-# testDriveR
+# testDriveR <img src="man/figures/logo.png" align="right" />
 
-The goal of testDriveR is to ...
+The goal of testDriveR is to provide data sets for teaching statistics and data science courses. These are data that I use for teaching [SOC 4930 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://slu.edu).
 
 ## Installation
 
-You can install testDriveR from github with:
+You can install testDriveR from [Github](https://github.com/chris-prener/testDriveR) with:
 
 ```{r gh-installation, eval = FALSE}
 # install.packages("devtools")
 devtools::install_github("chris-prener/testDriveR")
 ```
 
+## Current Data
+The package currently contains one data table:
+
+* `auto17` - A data set containing model year 2017 vehicles for sale in the United States
+
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This is a basic example that shows you how to open and explore the `auto17` data:
 
 ```{r example}
 ## basic example code
+library(testDriveR)
+autoData <- auto17
+str(autoData)
+head(autoData)
 ```
 
 ## Contributor Code of Conduct
