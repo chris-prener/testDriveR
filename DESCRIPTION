@@ -4,8 +4,9 @@ Title: Teaching Data for Statistics and Data Science
 Version: 0.1.0
 Authors@R: person("Christopher", "Prener", email = "chris.prener@slu.edu",
                   role = c("aut", "cre"))
-Description: More about what it does (maybe more than one line)
-    Use four spaces when indenting paragraphs within the Description.
+Description: The goal of testDriveR is to provide data sets for teaching statistics 
+    and data science courses. These are data that I use for teaching SOC 4930 / SOC 5050 
+    at Saint Louis University.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
