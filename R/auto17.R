@@ -34,7 +34,7 @@
 #' @source https://www.fueleconomy.gov/feg/download.shtml
 #'
 #' @examples
-#' str(stlMurders)
-#' head(stlMurders)
+#' str(auto17)
+#' head(auto17)
 #'
 "auto17"
