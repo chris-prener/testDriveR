@@ -66,6 +66,10 @@ GSS %<>%
   mutate(WRKSTAT = ifelse(WRKSTAT == 9, NA, WRKSTAT)) %>%
   mutate(INCOME16 = ifelse(INCOME16 == 0 | INCOME16 == 27 | INCOME16 == 98, NA, INCOME16))
 
+## create new data frames for saving
+gss16 <- GSS
+gss16_Miss <- GSS_MISS
+
 ## export data objects
-save(GSS, file="gss16.RData")
-save(GSS_MISS, file="gss16_Miss.RData")
+save(gss16, file="gss16.RData")
+save(gss16_Miss, file="gss16_Miss.RData")
