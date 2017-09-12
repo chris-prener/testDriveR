@@ -44,9 +44,9 @@ rm(GSS_ascii)
 rm(read.dat)
 rm(read.dct)
 
-## remove ballot variable
+## remove year variable
 GSS <- GSS %>%
-  select(-BALLOT)
+  select(-YEAR)
 
 ## create copy of data
 GSS_MISS <- GSS
@@ -59,10 +59,10 @@ GSS %<>%
   mutate(PADEG = ifelse(PADEG >= 7, NA, PADEG)) %>%
   mutate(DEGREE = ifelse(DEGREE >= 7, NA, DEGREE)) %>%
   mutate(SPWRKSLF = ifelse(SPWRKSLF >= 7, NA, SPWRKSLF)) %>%
-  mutate(SPHRS2 = ifelse(SPHRS2 == -1 | SPHRS2 >= 90, NA, SPHRS2)) %>%
+  mutate(SPHRS1 = ifelse(SPHRS1 == -1 | SPHRS1 >= 90, NA, SPHRS1)) %>%
   mutate(MARITAL = ifelse(MARITAL >= 7, NA, MARITAL)) %>%
   mutate(WRKSLF = ifelse(WRKSLF >= 7, NA, WRKSLF)) %>%
-  mutate(HRS2 = ifelse(HRS2 == -1 | SPHRS2 >= 90, NA, HRS2)) %>%
+  mutate(HRS1 = ifelse(HRS1 == -1 | HRS1 >= 90, NA, HRS1)) %>%
   mutate(WRKSTAT = ifelse(WRKSTAT == 9, NA, WRKSTAT)) %>%
   mutate(INCOME16 = ifelse(INCOME16 == 0 | INCOME16 == 27 | INCOME16 == 98, NA, INCOME16))
 
