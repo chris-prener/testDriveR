@@ -23,6 +23,7 @@ The package currently contains three data tables:
 -   `auto17` - A data set containing model year 2017 vehicles for sale in the United States
 -   `gss16` - A data set containing a selection of variables related to work and education from the 2016 General Social Survey
 -   `gss16_Miss` - A copy of `gss16` without missing data explicitly identified for teaching about missing data
+-   `kerrich` - A data set containing 2000 trials of coin flips by John Edmund Kerrich
 
 Contributor Code of Conduct
 ---------------------------
