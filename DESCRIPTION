@@ -13,5 +13,4 @@ LazyData: true
 RoxygenNote: 6.0.1
 Suggests: dplyr,
     ggplot2,
-    covr,
     testthat
