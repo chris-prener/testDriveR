@@ -16,7 +16,7 @@ https://stats.stackexchange.com/questions/76663/john-kerrich-coin-flip-data/7704
 https://books.google.com/books/about/An_experimental_introduction_to_the_theo.html?id=JBTvAAAAMAAJ&hl=en
 }
 \usage{
-data(auto17)
+data(kerrich)
 }
 \description{
 A data set containing 2,000 trials of coin flips from statistician John Edmund Kerrich's 1940s

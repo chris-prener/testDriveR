@@ -5,7 +5,7 @@
 #'
 #' @docType data
 #'
-#' @usage data(auto17)
+#' @usage data(kerrich)
 #'
 #' @format A data frame with 1216 rows and 21 variables:
 #' \describe{
