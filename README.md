@@ -30,6 +30,8 @@ The package currently contains three data tables:
 Use
 ---
 
+Once loaded, the data contained in `testDriveR` can be loaded into data frames in your global environment and then explored:
+
 ``` r
 library("testDriveR")
 autoData <- auto17

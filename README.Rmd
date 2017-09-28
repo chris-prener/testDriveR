@@ -38,7 +38,7 @@ The package currently contains three data tables:
 * `kerrich` - A data set containing 2000 trials of coin flips by John Edmund Kerrich
 
 ## Use
-
+Once loaded, the data contained in `testDriveR` can be loaded into data frames in your global environment and then explored:
 ```r
 library("testDriveR")
 autoData <- auto17
