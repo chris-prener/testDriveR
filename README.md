@@ -3,6 +3,8 @@
 testDriveR <img src="man/figures/logo.png" align="right" />
 ===========================================================
 
+[![Travis-CI Build Status](https://travis-ci.org/chris-prener/testDriveR.svg?branch=master)](https://travis-ci.org/chris-prener/testDriveR)
+
 The goal of testDriveR is to provide data sets for teaching statistics and data science courses. These are data that I use for teaching [SOC 4930 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://slu.edu).
 
 Installation
