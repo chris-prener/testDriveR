@@ -27,10 +27,10 @@ The package currently contains three data tables:
 -   `gss16_Miss` - A copy of `gss16` without missing data explicitly identified for teaching about missing data
 -   `kerrich` - A data set containing 2000 trials of coin flips by John Edmund Kerrich
 
-Use
----
+Useage
+------
 
-Once loaded, the data contained in `testDriveR` can be loaded into data frames in your global environment and then explored:
+Once loaded, the data contained in `testDriveR` can be loaded into data frames in your global environment and then explored. For example, to load the `auto17` data:
 
 ``` r
 library("testDriveR")
