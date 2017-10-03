@@ -3,14 +3,14 @@
 testDriveR <img src="man/figures/logo.png" align="right" />
 ===========================================================
 
-[![Travis-CI Build Status](https://travis-ci.org/chris-prener/testDriveR.svg?branch=master)](https://travis-ci.org/chris-prener/testDriveR) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/chris-prener/testDriveR?branch=master&svg=true)](https://ci.appveyor.com/project/chris-prener/testDriveR) [![DOI](https://zenodo.org/badge/95270521.svg)](https://zenodo.org/badge/latestdoi/95270521)
+[![Travis-CI Build Status](https://travis-ci.org/chris-prener/testDriveR.svg?branch=master)](https://travis-ci.org/chris-prener/testDriveR) [![AppVeyor Build Status](https://ci.appveyor.com/api/projects/status/github/chris-prener/testDriveR?branch=master&svg=true)](https://ci.appveyor.com/project/chris-prener/testDriveR) [![DOI](https://zenodo.org/badge/95270521.svg)](https://zenodo.org/badge/latestdoi/95270521) [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/testDriveR)](https://cran.r-project.org/package=testDriveR)
 
-The goal of testDriveR is to provide data sets for teaching statistics and data science courses. These are data that I use for teaching [SOC 4930 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://slu.edu).
+The goal of `testDriveR` is to provide data sets for teaching statistics and data science courses. These are data that I use for teaching [SOC 4930 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://slu.edu).
 
 Installation
 ------------
 
-You can install testDriveR from [Github](https://github.com/chris-prener/testDriveR) with:
+`testDriveR` is not available from CRAN yet. In the meantime, you can install the development version of `testDriveR` from [Github](https://github.com/chris-prener/testDriveR) with `devtools`:
 
 ``` r
 # install.packages("devtools")
