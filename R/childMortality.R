@@ -21,4 +21,4 @@
 #' @examples
 #' str(childMortality)
 #'
-"kerrich"
+"childMortality"
