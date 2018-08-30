@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">testDriveR</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.4.0.9000</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.4.0</span>
       </span>
     </div>
 
@@ -84,14 +84,16 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p><code>testDriveR</code> is not available from CRAN yet. In the meantime, you can install the development version of <code>testDriveR</code> from <a href="https://github.com/chris-prener/testDriveR">Github</a> with <code>remotes</code>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/remotes/topics/install_github">install_github</a></span>(<span class="st">"chris-prener/testDriveR"</span>)</a></code></pre></div>
+<p>The easiest way to get <code>testDriveR</code> is to install it from CRAN:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">"testDriveR"</span>)</a></code></pre></div>
+<p>You can also install the development version of <code>testDriveR</code> from <a href="https://github.com/chris-prener/testDriveR">Github</a> with <code>remotes</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/remotes/topics/install_github">install_github</a></span>(<span class="st">"chris-prener/testDriveR"</span>)</a></code></pre></div>
 </div>
 <div id="current-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#current-data" class="anchor"></a>Current Data</h2>
-<p>The package currently contains three data tables:</p>
+<p>The package currently contains five data tables:</p>
 <ul>
 <li>
 <code>auto17</code> - A data set containing model year 2017 vehicles for sale in the United States</li>
@@ -110,9 +112,9 @@
 <h2 class="hasAnchor">
 <a href="#useage" class="anchor"></a>Useage</h2>
 <p>Once loaded, the data contained in <code>testDriveR</code> can be loaded into data frames in your global environment and then explored. For example, to load the <code>auto17</code> data:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(<span class="st">"testDriveR"</span>)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">autoData &lt;-<span class="st"> </span>auto17</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">str</span>(autoData)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(<span class="st">"testDriveR"</span>)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">autoData &lt;-<span class="st"> </span>auto17</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw">str</span>(autoData)</a></code></pre></div>
 </div>
 <div id="data-creation" class="section level2">
 <h2 class="hasAnchor">
