@@ -11,9 +11,10 @@ Status](https://ci.appveyor.com/api/projects/status/github/chris-prener/testDriv
 [![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/testDriveR)](https://cran.r-project.org/package=testDriveR)
 
 The goal of `testDriveR` is to provide data sets for teaching statistics
-and data science courses. These are data that I use for teaching
-[SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis
-University](https://slu.edu).
+and data science courses. This package includes a sample of data from
+John Edmund Kerrich’s famous coinflip experiment. These are data that I
+use for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at
+[Saint Louis University](https://slu.edu).
 
 ## Installation
 
@@ -35,7 +36,7 @@ The package currently contains three data tables:
   - `childMortality` - A data set containing childhood mortality time
     series data by country from UNICEF
   - `gss14` - A data set containing a selection of variables related to
-    work and education from the 2016 General Social Survey
+    work and education from the 2014 General Social Survey
   - `gss14_simple` - A simple version of `gss14` without factors created
     and without missing data explicitly declared
   - `kerrich` - A data set containing 2000 trials of coin flips by [John
