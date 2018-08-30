@@ -1,6 +1,8 @@
-# testDriveR 0.4.0.9000
+# testDriveR 0.4.0
 
 * Added a `NEWS.md` file to track changes to the package.
+* Switched GSS data to 2014, variables have remained the same
+* Updated package template including website, DESCRIPTION, README, LICENSE, and help files
 
 # testDriveR 0.3.0
 
