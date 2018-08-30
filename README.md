@@ -53,6 +53,20 @@ autoData <- auto17
 str(autoData)
 ```
 
+## Data Creation
+
+If you are interested in the original data/code used to create the
+included data, you can find them at:
+
+  - `auto17` is documented in [Chris’s `autoData`
+    repository](https://github.com/chris-prener/autoData)
+  - `childMortality` is documented in [Chris’s `childMortality`
+    repository](https://github.com/chris-prener/childMortality)
+  - `gss14` and `gss14_simple` are documented in [Chris’s `gss14`
+    repository](https://github.com/chris-prener/gss14)
+  - `kerrich` is documented in the [`extdata`
+    directory](/inst/extdata/kerrich.R)
+
 ## Contributor Code of Conduct
 
 Please note that this project is released with a [Contributor Code of
