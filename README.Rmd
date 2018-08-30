@@ -19,15 +19,15 @@ knitr::opts_chunk$set(
 [![DOI](https://zenodo.org/badge/95270521.svg)](https://zenodo.org/badge/latestdoi/95270521)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/testDriveR)](https://cran.r-project.org/package=testDriveR)
 
-The goal of `testDriveR` is to provide data sets for teaching statistics and data science courses. These are data that I use for teaching [SOC 4930 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://slu.edu).
+The goal of `testDriveR` is to provide data sets for teaching statistics and data science courses. These are data that I use for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://slu.edu).
 
 ## Installation
 
-`testDriveR` is not available from CRAN yet. In the meantime, you can install the development version of `testDriveR` from [Github](https://github.com/chris-prener/testDriveR) with `devtools`:
+`testDriveR` is not available from CRAN yet. In the meantime, you can install the development version of `testDriveR` from [Github](https://github.com/chris-prener/testDriveR) with `remotes`:
 
 ```{r gh-installation, eval = FALSE}
-# install.packages("devtools")
-devtools::install_github("chris-prener/testDriveR")
+# install.packages("remotes")
+remotes::install_github("chris-prener/testDriveR")
 ```
 
 ## Current Data
@@ -35,8 +35,8 @@ The package currently contains three data tables:
 
 * `auto17` - A data set containing model year 2017 vehicles for sale in the United States
 * `childMortality` - A data set containing childhood mortality time series data by country from UNICEF
-* `gss16` - A data set containing a selection of variables related to work and education from the 2016 General Social Survey
-* `gss16_Miss` - A copy of `gss16` without missing data explicitly identified for teaching about missing data
+* `gss14` - A data set containing a selection of variables related to work and education from the 2016 General Social Survey
+* `gss14_simple` - A simple version of `gss14` without factors created and without missing data explicitly declared
 * `kerrich` - A data set containing 2000 trials of coin flips by John Edmund Kerrich
 
 ## Useage
