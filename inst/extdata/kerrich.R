@@ -63,4 +63,4 @@ kerrich %>%
   select(id, outcome, average) -> kerrich
 
 # save data
-save(kerrich, file="kerrich.RData")
+save(kerrich, file="data/kerrich.rda")
