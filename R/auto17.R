@@ -1,6 +1,6 @@
 #' Model Year 2017 Vehicles
 #'
-#' A data set containing model year 2017 vehicles for sale in the United States.
+#' @description A data set containing model year 2017 vehicles for sale in the United States.
 #'
 #' @docType data
 #'

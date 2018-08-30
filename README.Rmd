@@ -19,15 +19,15 @@ knitr::opts_chunk$set(
 [![DOI](https://zenodo.org/badge/95270521.svg)](https://zenodo.org/badge/latestdoi/95270521)
 [![CRAN_Status_Badge](http://www.r-pkg.org/badges/version/testDriveR)](https://cran.r-project.org/package=testDriveR)
 
-The goal of `testDriveR` is to provide data sets for teaching statistics and data science courses. These are data that I use for teaching [SOC 4930 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://slu.edu).
+The goal of `testDriveR` is to provide data sets for teaching statistics and data science courses. This package includes a sample of data from John Edmund Kerrich's famous coinflip experiment. These are data that I use for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://slu.edu).
 
 ## Installation
 
-`testDriveR` is not available from CRAN yet. In the meantime, you can install the development version of `testDriveR` from [Github](https://github.com/chris-prener/testDriveR) with `devtools`:
+`testDriveR` is not available from CRAN yet. In the meantime, you can install the development version of `testDriveR` from [Github](https://github.com/chris-prener/testDriveR) with `remotes`:
 
 ```{r gh-installation, eval = FALSE}
-# install.packages("devtools")
-devtools::install_github("chris-prener/testDriveR")
+# install.packages("remotes")
+remotes::install_github("chris-prener/testDriveR")
 ```
 
 ## Current Data
@@ -35,9 +35,9 @@ The package currently contains three data tables:
 
 * `auto17` - A data set containing model year 2017 vehicles for sale in the United States
 * `childMortality` - A data set containing childhood mortality time series data by country from UNICEF
-* `gss16` - A data set containing a selection of variables related to work and education from the 2016 General Social Survey
-* `gss16_Miss` - A copy of `gss16` without missing data explicitly identified for teaching about missing data
-* `kerrich` - A data set containing 2000 trials of coin flips by John Edmund Kerrich
+* `gss14` - A data set containing a selection of variables related to work and education from the 2014 General Social Survey
+* `gss14_simple` - A simple version of `gss14` without factors created and without missing data explicitly declared
+* `kerrich` - A data set containing 2000 trials of coin flips by [John Edmund Kerrich](https://en.wikipedia.org/wiki/John_Edmund_Kerrich)
 
 ## Useage
 Once loaded, the data contained in `testDriveR` can be loaded into data frames in your global environment and then explored. For example, to load the `auto17` data:
@@ -48,5 +48,13 @@ autoData <- auto17
 str(autoData)
 ```
 
+## Data Creation
+If you are interested in the original data/code used to create the included data, you can find them at:
+
+* `auto17` is documented in [Chris's `autoData` repository](https://github.com/chris-prener/autoData)
+* `childMortality` is documented in [Chris's `childMortality` repository](https://github.com/chris-prener/childMortality)
+* `gss14` and `gss14_simple` are documented in [Chris's `gss14` repository](https://github.com/chris-prener/gss14)
+* `kerrich` is documented in the [`extdata` directory](/inst/extdata/kerrich.R)
+
 ## Contributor Code of Conduct
-Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project you agree to abide by its terms.

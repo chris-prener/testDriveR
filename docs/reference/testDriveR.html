@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>UNICEF Childhood Mortality Data — childMortality • testDriveR</title>
+<title>testDriveR: Teaching Data for Statistics and Data Science — testDriveR • testDriveR</title>
 
 <!-- jquery -->
 <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha384-nrOSfDHtoPMzJHjVTdCopGqIqeYETSXhZDFyniQ8ZHcVy08QesyHcnOUpMpqnmWq" crossorigin="anonymous"></script>
@@ -30,9 +30,13 @@
 
 
 
-<meta property="og:title" content="UNICEF Childhood Mortality Data — childMortality" />
+<meta property="og:title" content="testDriveR: Teaching Data for Statistics and Data Science — testDriveR" />
 
-<meta property="og:description" content="A data set containing time series data by country for estimated under-5, infant, and neonatal mortality rates." />
+<meta property="og:description" content="The goal of testDriveR is to provide data sets for teaching
+    statistics and data science courses. This package includes a sample of
+    data from John Edmund Kerrich's famous coinflip experiment. These are data
+    that I use for teaching SOC 4015 / SOC 5050
+    at Saint Louis University." />
 
 <meta property="og:image" content="/logo.png" />
 <meta name="twitter:card" content="summary" />
@@ -102,55 +106,46 @@
 <div class="row">
   <div class="col-md-9 contents">
     <div class="page-header">
-    <h1>UNICEF Childhood Mortality Data</h1>
-    <small class="dont-index">Source: <a href='https://github.com/chris-prener/testDriveR/blob/master/R/childMortality.R'><code>R/childMortality.R</code></a></small>
-    <div class="hidden name"><code>childMortality.Rd</code></div>
+    <h1>testDriveR: Teaching Data for Statistics and Data Science</h1>
+    <small class="dont-index">Source: <a href='https://github.com/chris-prener/testDriveR/blob/master/R/testDriveR-package.R'><code>R/testDriveR-package.R</code></a></small>
+    <div class="hidden name"><code>testDriveR.Rd</code></div>
     </div>
 
     <div class="ref-description">
     
-    <p>A data set containing time series data by country for estimated under-5, infant, and neonatal mortality rates.</p>
+    <p>The goal of <code>testDriveR</code> is to provide data sets for teaching
+    statistics and data science courses. This package includes a sample of
+    data from John Edmund Kerrich's famous coinflip experiment. These are data
+    that I use for teaching <a href='https://slu-soc5050.github.io'>SOC 4015 / SOC 5050</a>
+    at <a href='https://slu.edu'>Saint Louis University</a>.</p>
     
     </div>
 
-    <pre class="usage"><span class='fu'>data</span>(<span class='no'>childMortality</span>)</pre>
         
-    <h2 class="hasAnchor" id="format"><a class="anchor" href="#format"></a>Format</h2>
+    <h2 class="hasAnchor" id="details"><a class="anchor" href="#details"></a>Details</h2>
 
-    <p>A data frame with 28982 rows and 6 variables:</p><dl class='dl-horizontal'>
-  <dt>countryISO</dt><dd><p>two-letter country code</p></dd>
-  <dt>countryName</dt><dd><p>full name of country</p></dd>
-  <dt>continent</dt><dd><p>name of continent</p></dd>
-  <dt>category</dt><dd><p>type of mortality rate - <code>infant_MR</code>, <code>child_MR</code>, or <code>under5_MR</code></p></dd>
-  <dt>year</dt><dd><p>year of estimate</p></dd>
-  <dt>estimate</dt><dd><p>estimated mortality rate</p></dd>
-</dl>
+    <p>There are currently five data sets that are included in the package:</p>
+<p></p><ul>
+<li><p><code><a href='auto17.html'>auto17</a></code> - A data set containing model year 2017 vehicles
+          for sale in the United States</p></li>
+<li><p><code><a href='childMortality.html'>childMortality</a></code> - A data set containing childhood mortality
+          time series data by country from UNICEF</p></li>
+<li><p><code><a href='gss14.html'>gss14</a></code> - A data set containing a selection of variables
+          related to work and education from the 2014 General Social Survey</p></li>
+<li><p><code><a href='gss14_simple.html'>gss14_simple</a></code> - A simple version of <code>gss14</code> without
+          factors created and without missing data explicitly declared</p></li>
+<li><p><code><a href='kerrich.html'>kerrich</a></code> - A data set containing 2000 trials of coin flips by
+          <a href='https://en.wikipedia.org/wiki/John_Edmund_Kerrich'>John Edmund Kerrich</a></p></li>
+</ul>
     
-    <h2 class="hasAnchor" id="source"><a class="anchor" href="#source"></a>Source</h2>
 
-    <p>http://childmortality.org</p>
-    
-
-    <h2 class="hasAnchor" id="examples"><a class="anchor" href="#examples"></a>Examples</h2>
-    <pre class="examples"><div class='input'><span class='fu'>str</span>(<span class='no'>childMortality</span>)</div><div class='output co'>#&gt; Classes ‘tbl_df’, ‘tbl’ and 'data.frame':	28982 obs. of  6 variables:
-#&gt;  $ countryISO : chr  "AF" "AF" "AF" "AF" ...
-#&gt;  $ countryName: chr  "Afghanistan" "Afghanistan" "Afghanistan" "Afghanistan" ...
-#&gt;  $ continent  : chr  "Asia" "Asia" "Asia" "Asia" ...
-#&gt;  $ category   : chr  "infant_MR" "infant_MR" "infant_MR" "infant_MR" ...
-#&gt;  $ year       : int  1961 1962 1963 1964 1965 1966 1967 1968 1969 1970 ...
-#&gt;  $ estimate   : num  240 236 232 228 225 ...</div><div class='input'>
-</div></pre>
   </div>
   <div class="col-md-3 hidden-xs hidden-sm" id="sidebar">
     <h2>Contents</h2>
     <ul class="nav nav-pills nav-stacked">
       
-      <li><a href="#format">Format</a></li>
-
-      <li><a href="#source">Source</a></li>
-      
-      <li><a href="#examples">Examples</a></li>
-    </ul>
+      <li><a href="#details">Details</a></li>
+          </ul>
 
   </div>
 </div>
