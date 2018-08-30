@@ -18,8 +18,13 @@ use for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at
 
 ## Installation
 
-`testDriveR` is not available from CRAN yet. In the meantime, you can
-install the development version of `testDriveR` from
+The easiest way to get `testDriveR` is to install it from CRAN:
+
+``` r
+install.packages("testDriveR")
+```
+
+You can also install the development version of `testDriveR` from
 [Github](https://github.com/chris-prener/testDriveR) with `remotes`:
 
 ``` r
@@ -29,7 +34,7 @@ remotes::install_github("chris-prener/testDriveR")
 
 ## Current Data
 
-The package currently contains three data tables:
+The package currently contains five data tables:
 
   - `auto17` - A data set containing model year 2017 vehicles for sale
     in the United States
