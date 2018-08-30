@@ -24,7 +24,7 @@ There are currently five data sets that are included in the package:
           related to work and education from the 2014 General Social Survey
       \item \code{\link{gss14_simple}} - A simple version of \code{gss14} without
           factors created and without missing data explicitly declared
-      \item \code{\link{}} - A data set containing 2000 trials of coin flips by
+      \item \code{\link{kerrich}} - A data set containing 2000 trials of coin flips by
           \href{https://en.wikipedia.org/wiki/John_Edmund_Kerrich}{John Edmund Kerrich}
     }
 }
