@@ -37,7 +37,7 @@ The package currently contains three data tables:
 * `childMortality` - A data set containing childhood mortality time series data by country from UNICEF
 * `gss14` - A data set containing a selection of variables related to work and education from the 2016 General Social Survey
 * `gss14_simple` - A simple version of `gss14` without factors created and without missing data explicitly declared
-* `kerrich` - A data set containing 2000 trials of coin flips by John Edmund Kerrich
+* `kerrich` - A data set containing 2000 trials of coin flips by [John Edmund Kerrich](https://en.wikipedia.org/wiki/John_Edmund_Kerrich)
 
 ## Useage
 Once loaded, the data contained in `testDriveR` can be loaded into data frames in your global environment and then explored. For example, to load the `auto17` data:

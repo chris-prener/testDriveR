@@ -38,8 +38,8 @@ The package currently contains three data tables:
     work and education from the 2016 General Social Survey
   - `gss14_simple` - A simple version of `gss14` without factors created
     and without missing data explicitly declared
-  - `kerrich` - A data set containing 2000 trials of coin flips by John
-    Edmund Kerrich
+  - `kerrich` - A data set containing 2000 trials of coin flips by [John
+    Edmund Kerrich](https://en.wikipedia.org/wiki/John_Edmund_Kerrich)
 
 ## Useage
 
