@@ -4,7 +4,7 @@
 #'     statistics and data science courses. This package includes a sample of
 #'     data from John Edmund Kerrich's famous coinflip experiment. These are data
 #'     that I use for teaching \href{https://slu-soc5050.github.io}{SOC 4015 / SOC 5050}
-#'     at \href{https://slu.edu}{Saint Louis University}.
+#'     at \href{https://www.slu.edu}{Saint Louis University}.
 #'
 #' @details There are currently five data sets that are included in the package:
 #'
