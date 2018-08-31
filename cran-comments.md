@@ -1,5 +1,6 @@
 ## Release summary
-This is the re-resubmission of the initial CRAN submission. Based on the reviewer's (Uwe Ligges) feedback, I have altered the package description in the `DESCRIPTION` file and fixed the broken URL in `man/testDriveR.Rd`. 
+This is the re-resubmission of the initial CRAN submission. Based on the reviewer's (Uwe Ligges) feedback, I have altered the package description in the `DESCRIPTION` file and fixed the broken URL in `man/testDriveR.Rd`. Thanks,
+Uwe, for your review and your feedback.
 
 ## Test environments
 * local OS X install, R 3.5.1
