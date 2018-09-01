@@ -10,10 +10,10 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script><!-- Font Awesome icons --><link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
 <!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.7.1/clipboard.min.js" integrity="sha384-cV+rhyOuRHc9Ub/91rihWcGmMmCXDeksTtCihMupQHSsi8GIIRDG0ThDc3HGQFJ3" crossorigin="anonymous"></script><!-- sticky kit --><script src="https://cdnjs.cloudflare.com/ajax/libs/sticky-kit/1.1.3/sticky-kit.min.js" integrity="sha256-c4Rlo1ZozqTPE2RLuvbusY3+SU1pQaJC0TjuhygMipw=" crossorigin="anonymous"></script><!-- pkgdown --><link href="pkgdown.css" rel="stylesheet">
 <script src="pkgdown.js"></script><meta property="og:title" content="Teaching Data for Statistics and Data Science">
-<meta property="og:description" content="The goal of testDriveR is to provide data sets for teaching statistics 
-    and data science courses. This package includes a sample of data from John
-    Edmund Kerrich's famous coinflip experiment. These are data that I use for 
-    teaching SOC 4015 / SOC 5050 at Saint Louis University.">
+<meta property="og:description" content="Provides data sets for teaching statistics and data science courses. 
+    This package includes a sample of data from John Edmund Kerrich's famous 
+    coinflip experiment. These are data that I use for teaching SOC 4015 / SOC 
+    5050 at Saint Louis University.">
 <meta property="og:image" content="/logo.png">
 <meta name="twitter:card" content="summary">
 <!-- mathjax --><script src="https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script><!--[if lt IE 9]>
@@ -33,7 +33,7 @@
       </button>
       <span class="navbar-brand">
         <a class="navbar-link" href="index.html">testDriveR</a>
-        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.4.0.9000</span>
+        <span class="label label-default" data-toggle="tooltip" data-placement="bottom" title="Released package">0.4.0</span>
       </span>
     </div>
 
@@ -84,14 +84,16 @@
 <div id="installation" class="section level2">
 <h2 class="hasAnchor">
 <a href="#installation" class="anchor"></a>Installation</h2>
-<p><code>testDriveR</code> is not available from CRAN yet. In the meantime, you can install the development version of <code>testDriveR</code> from <a href="https://github.com/chris-prener/testDriveR">Github</a> with <code>remotes</code>:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
-<a class="sourceLine" id="cb1-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/remotes/topics/install_github">install_github</a></span>(<span class="st">"chris-prener/testDriveR"</span>)</a></code></pre></div>
+<p>The easiest way to get <code>testDriveR</code> is to install it from CRAN:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb1-1" data-line-number="1"><span class="kw">install.packages</span>(<span class="st">"testDriveR"</span>)</a></code></pre></div>
+<p>You can also install the development version of <code>testDriveR</code> from <a href="https://github.com/chris-prener/testDriveR">Github</a> with <code>remotes</code>:</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="co"># install.packages("remotes")</span></a>
+<a class="sourceLine" id="cb2-2" data-line-number="2">remotes<span class="op">::</span><span class="kw"><a href="http://www.rdocumentation.org/packages/remotes/topics/install_github">install_github</a></span>(<span class="st">"chris-prener/testDriveR"</span>)</a></code></pre></div>
 </div>
 <div id="current-data" class="section level2">
 <h2 class="hasAnchor">
 <a href="#current-data" class="anchor"></a>Current Data</h2>
-<p>The package currently contains three data tables:</p>
+<p>The package currently contains five data tables:</p>
 <ul>
 <li>
 <code>auto17</code> - A data set containing model year 2017 vehicles for sale in the United States</li>
@@ -110,9 +112,9 @@
 <h2 class="hasAnchor">
 <a href="#useage" class="anchor"></a>Useage</h2>
 <p>Once loaded, the data contained in <code>testDriveR</code> can be loaded into data frames in your global environment and then explored. For example, to load the <code>auto17</code> data:</p>
-<div class="sourceCode" id="cb2"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb2-1" data-line-number="1"><span class="kw">library</span>(<span class="st">"testDriveR"</span>)</a>
-<a class="sourceLine" id="cb2-2" data-line-number="2">autoData &lt;-<span class="st"> </span>auto17</a>
-<a class="sourceLine" id="cb2-3" data-line-number="3"><span class="kw">str</span>(autoData)</a></code></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb3-1" data-line-number="1"><span class="kw">library</span>(<span class="st">"testDriveR"</span>)</a>
+<a class="sourceLine" id="cb3-2" data-line-number="2">autoData &lt;-<span class="st"> </span>auto17</a>
+<a class="sourceLine" id="cb3-3" data-line-number="3"><span class="kw">str</span>(autoData)</a></code></pre></div>
 </div>
 <div id="data-creation" class="section level2">
 <h2 class="hasAnchor">

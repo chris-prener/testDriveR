@@ -1,19 +1,19 @@
 Package: testDriveR
 Type: Package
 Title: Teaching Data for Statistics and Data Science
-Version: 0.4.0.9000
+Version: 0.4.0
 Authors@R: person("Christopher", "Prener", email = "chris.prener@slu.edu",
                   role = c("aut", "cre"))
-Description: The goal of testDriveR is to provide data sets for teaching statistics 
-    and data science courses. This package includes a sample of data from John
-    Edmund Kerrich's famous coinflip experiment. These are data that I use for 
-    teaching SOC 4015 / SOC 5050 at Saint Louis University.
+Description: Provides data sets for teaching statistics and data science courses. 
+    It includes a sample of data from John Edmund Kerrich's famous 
+    coinflip experiment. These are data that I use for teaching SOC 4015 / SOC 
+    5050 at Saint Louis University.
 License: GPL-3
 URL: https://github.com/chris-prener/testDriveR
 BugReports: https://github.com/chris-prener/testDriveR/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 6.0.1
+RoxygenNote: 6.1.0
 Suggests: 
     dplyr,
     ggplot2,
