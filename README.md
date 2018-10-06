@@ -16,6 +16,15 @@ John Edmund Kerrich’s famous coinflip experiment. These are data that I
 use for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at
 [Saint Louis University](https://slu.edu).
 
+## What is New in v0.5.0
+
+The development version of `testDriver` now includes an R Markdown
+template for completing assignments. This is the *required* format for
+authoring R Markdown documents in my courses [SOC 4015 /
+SOC 5050](https://slu-soc5050.github.io) and [SOC 4650 /
+SOC 5650](https://slu-soc5650.github.io) at [Saint Louis
+University](https://slu.edu).
+
 ## Installation
 
 The easiest way to get `testDriveR` is to install it from CRAN:
