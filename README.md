@@ -18,12 +18,12 @@ use for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at
 
 ## What is New in v0.5.0
 
-The development version of `testDriver` now includes an R Markdown
-template for completing assignments. This is the *required* format for
-authoring R Markdown documents in my courses [SOC 4015 /
+The package now includes an R Markdown template for completing
+assignments. This is the *required* format for authoring R Markdown
+documents in my courses [SOC 4015 /
 SOC 5050](https://slu-soc5050.github.io) and [SOC 4650 /
 SOC 5650](https://slu-soc5650.github.io) at [Saint Louis
-University](https://slu.edu).
+University](https://slu.edu). A quick overview is included below.
 
 ## Installation
 
@@ -56,7 +56,7 @@ The package currently contains five data tables:
   - `kerrich` - A data set containing 2000 trials of coin flips by [John
     Edmund Kerrich](https://en.wikipedia.org/wiki/John_Edmund_Kerrich)
 
-## Useage
+### Usage
 
 Once loaded, the data contained in `testDriveR` can be loaded into data
 frames in your global environment and then explored. For example, to
@@ -68,7 +68,7 @@ autoData <- auto17
 str(autoData)
 ```
 
-## Data Creation
+### Data Creation
 
 If you are interested in the original data/code used to create the
 included data, you can find them at:
@@ -81,6 +81,19 @@ included data, you can find them at:
     repository](https://github.com/chris-prener/gss14)
   - `kerrich` is documented in the [`extdata`
     directory](/inst/extdata/kerrich.R)
+
+## R Markdown Template
+
+The package also includes a template that my students use for getting
+started with `R` based assignments. It can be accessed from within
+RStudio by going to `File > New File > R Markdown...` and then selecting
+`SLU Sociology Assignments` under `Template`:
+
+![](man/figures/template.png)
+
+The template includes `YAML` for generating both `.nb.html` and `.md`
+output, a pre-formatted date that updates each time the document is
+knit, and initial code blocks for loading dependencies and data.
 
 ## Contributor Code of Conduct
 
