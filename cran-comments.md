@@ -7,10 +7,12 @@ This is an update that adds an R markdown template for use by my students and ot
 * macOS (on Travis CI), R-release, R-oldrel
 * windows i386 (on Appveyor), R-release, R-oldrel, R-devel
 * windows x64 (on Appveyor), R-release, R-oldrel, R-devel
-* winbuilder, R-devel
+* winbuilder, R-release, R-oldrel, R-devel
 
 ## R CMD check results
 There were no ERRORs, WARNINGs, or NOTEs with local checks or on Travis CI/Appveyor.
+
+winbuilder identified several words that may be misspelled in the `DESCRIPTION` file - all are correct.
 
 ## Reverse dependencies
 Not applicable.
