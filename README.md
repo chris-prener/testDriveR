@@ -16,7 +16,7 @@ John Edmund Kerrich’s famous coinflip experiment. These are data that I
 use for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at
 [Saint Louis University](https://slu.edu).
 
-## What is New in v0.5.0
+## What is New in v0.5.1
 
 The package now includes an R Markdown template for completing
 assignments. This is the *required* format for authoring R Markdown

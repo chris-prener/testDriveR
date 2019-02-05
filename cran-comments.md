@@ -7,12 +7,16 @@ This is an update that adds an R markdown template for use by my students and ot
 * macOS (on Travis CI), R-release, R-oldrel
 * windows i386 (on Appveyor), R-release, R-oldrel, R-devel
 * windows x64 (on Appveyor), R-release, R-oldrel, R-devel
-* winbuilder, R-release, R-oldrel, R-devel
+* winbuilder, R-release, R-devel
+* r-hub, Windows Server 2008 R2 SP1, R-devel, 32/64 bit
+* r-hub, Ubuntu Linux 16.04 LTS, R-release, GCC
+* r-hub, Fedora Linux, R-devel, clang, gfortran
 
 ## R CMD check results
-There were no ERRORs, WARNINGs, or NOTEs with local checks or on Travis CI/Appveyor.
+* There were no ERRORs, WARNINGs, or NOTEs with local checks or on Travis CI/Appveyor.
 
-winbuilder identified several words that may be misspelled in the `DESCRIPTION` file - all are correct.
+* winbuilder and r-hub identified several words that may be misspelled in the `DESCRIPTION` file - all are correct.
+* winbuilder and r-hub, R-release both have a note about issues coverting the ORCID ID to a URL
 
 ## Reverse dependencies
 Not applicable.

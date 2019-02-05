@@ -2,8 +2,8 @@ Package: testDriveR
 Type: Package
 Title: Teaching Data for Statistics and Data Science
 Version: 0.5.1
-Authors@R: c(person("Christopher", "Prener", , "chris.prener@slu.edu", c("aut", "cre"),
-    comment = c(ORCID = "0000-0002-4310-9888")))
+Authors@R: person("Christopher", "Prener", , "chris.prener@slu.edu", c("aut", "cre"),
+    comment = c(ORCID = "0000-0002-4310-9888"))
 Description: Provides data sets for teaching statistics and data science courses. 
     It includes a sample of data from John Edmund Kerrich's famous 
     coinflip experiment. These are data that I use for teaching SOC 4015 / SOC 
