@@ -1,4 +1,4 @@
-# testDriveR 0.5.0.9000
+# testDriveR 0.5.0
 
 * Add an R Markdown template for completing assignments in my courses.
 

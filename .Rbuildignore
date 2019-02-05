@@ -1,5 +1,5 @@
 ^cran-comments\.md$
-^LICENSE\.md$
+^LICENSE$
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^README\.Rmd$
