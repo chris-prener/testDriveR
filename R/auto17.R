@@ -22,7 +22,7 @@
 #'   \item{fuelStr2}{fuel, full}
 #'   \item{fuelCost}{estimated fuel cost}
 #'   \item{displ}{engine displacement}
-#'   \item{transStr}{tarnsmission, full}
+#'   \item{transStr}{transmission, full}
 #'   \item{transStr2}{transmission, abbrev.}
 #'   \item{gears}{number of gears}
 #'   \item{cyl}{number of cylinders}
