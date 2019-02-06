@@ -20,3 +20,7 @@ This is an update that adds an R markdown template for use by my students and ot
 
 ## Reverse dependencies
 Not applicable.
+
+## Changes
+* no substantive changes to any existing functionality (aside for addressing typos in documentation)
+* added the R Markdown template for my students
