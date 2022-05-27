@@ -1,26 +1,27 @@
 ## Release summary
-This is an update that adds an R markdown template for use by my students and others using the package.
+This is an update to adjust the maintainer's contact information. Small documentation updates have been made as well.
 
 ## Test environments
-* local OS X install, R 3.5.2
-* ubuntu 14.04 (on Travis CI), R-release, R-oldrel, R-devel
-* macOS (on Travis CI), R-release, R-oldrel
-* windows i386 (on Appveyor), R-release, R-oldrel, R-devel
-* windows x64 (on Appveyor), R-release, R-oldrel, R-devel
-* winbuilder, R-release, R-devel
-* r-hub, Windows Server 2008 R2 SP1, R-devel, 32/64 bit
-* r-hub, Ubuntu Linux 16.04 LTS, R-release, GCC
-* r-hub, Fedora Linux, R-devel, clang, gfortran
+* local OS X install: R 4.1.2
+* Linux ubuntu distribution (via GitHub Actions): R-devel, R-release, past four R-oldrel (4.1.3, 4.0.5, 3.6.3, 3.5.3)
+* macOS (via GitHub Actions): R-release
+* windows (via GitHub Actions): R-release
+* winbuilder: R-release, R-oldrel, R-devel
 
 ## R CMD check results
-* There were no ERRORs, WARNINGs, or NOTEs with local checks or on Travis CI/Appveyor.
+There were no ERRORs, WARNINGs, or NOTEs with local or CI checks. There is one NOTE on winbuilder:
 
-* winbuilder and r-hub identified several words that may be misspelled in the `DESCRIPTION` file - all are correct.
-* winbuilder and r-hub, R-release both have a note about issues coverting the ORCID ID to a URL
+```r
+* checking CRAN incoming feasibility ... NOTE
+Maintainer: 'Christopher Prener <chris.prener@gmail.com>'
+
+New maintainer:
+  Christopher Prener <chris.prener@gmail.com>
+Old maintainer(s):
+  Christopher Prener <chris.prener@slu.edu>
+```
+
+I am still the maintainer - I have just changed my contact information due to new employment!
 
 ## Reverse dependencies
 Not applicable.
-
-## Changes
-* no substantive changes to any existing functionality (aside for addressing typos in documentation)
-* added the R Markdown template for my students

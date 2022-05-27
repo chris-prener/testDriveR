@@ -1,3 +1,9 @@
+# testDriveR 0.5.2
+
+* Update maintainer contact information
+* Update CI workflow
+* Minor updates to documentation
+
 # testDriveR 0.5.1
 
 * Address NOTES found on Winbuilder prior to CRAN submission

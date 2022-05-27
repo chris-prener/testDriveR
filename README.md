@@ -3,26 +3,26 @@
 
 # testDriveR <img src="man/figures/logo.png" align="right" />
 
-[![Travis-CI Build
-Status](https://travis-ci.org/chris-prener/testDriveR.svg?branch=master)](https://travis-ci.org/chris-prener/testDriveR)
-[![AppVeyor Build
-Status](https://ci.appveyor.com/api/projects/status/github/chris-prener/testDriveR?branch=master&svg=true)](https://ci.appveyor.com/project/chris-prener/testDriveR)
+![GitHub
+Workflow](https://github.com/chris-prener/testDriveR/actions/workflows/R-CMD-check.yaml/badge.svg)
+[![CRAN_status_badge](https://www.r-pkg.org/badges/version/testDriveR)](https://cran.r-project.org/package=testDriveR)
+[![cran
+checks](https://cranchecks.info/badges/worst/testDriveR)](https://cran.r-project.org/web/checks/check_results_testDriveR.html)
+[![Downloads](https://cranlogs.r-pkg.org/badges/testDriveR?color=brightgreen)](https://www.r-pkg.org/pkg/testDriveR)
+
 [![DOI](https://zenodo.org/badge/95270521.svg)](https://zenodo.org/badge/latestdoi/95270521)
-[![CRAN\_Status\_Badge](http://www.r-pkg.org/badges/version/testDriveR)](https://cran.r-project.org/package=testDriveR)
 
 The goal of `testDriveR` is to provide data sets for teaching statistics
 and data science courses. This package includes a sample of data from
 John Edmund Kerrich’s famous coinflip experiment. These are data that I
-use for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at
-[Saint Louis University](https://slu.edu).
+used for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io)
+at [Saint Louis University](https://slu.edu).
 
-## What is New in v0.5.1
-
-The package now includes an R Markdown template for completing
-assignments. This is the *required* format for authoring R Markdown
-documents in my courses [SOC 4015 /
-SOC 5050](https://slu-soc5050.github.io) and [SOC 4650 /
-SOC 5650](https://slu-soc5650.github.io) at [Saint Louis
+The package also includes an R Markdown template for completing
+assignments. This was the *required* format for authoring R Markdown
+documents in my courses [SOC 4015 / SOC
+5050](https://slu-soc5050.github.io) and [SOC 4650 / SOC
+5650](https://slu-soc5650.github.io) at [Saint Louis
 University](https://slu.edu). A quick overview is included below.
 
 ## Installation
@@ -37,7 +37,6 @@ You can also install the development version of `testDriveR` from
 [Github](https://github.com/chris-prener/testDriveR) with `remotes`:
 
 ``` r
-# install.packages("remotes")
 remotes::install_github("chris-prener/testDriveR")
 ```
 
@@ -45,15 +44,15 @@ remotes::install_github("chris-prener/testDriveR")
 
 The package currently contains five data tables:
 
-  - `auto17` - A data set containing model year 2017 vehicles for sale
+-   `auto17` - A data set containing model year 2017 vehicles for sale
     in the United States
-  - `childMortality` - A data set containing childhood mortality time
+-   `childMortality` - A data set containing childhood mortality time
     series data by country from UNICEF
-  - `gss14` - A data set containing a selection of variables related to
+-   `gss14` - A data set containing a selection of variables related to
     work and education from the 2014 General Social Survey
-  - `gss14_simple` - A simple version of `gss14` without factors created
+-   `gss14_simple` - A simple version of `gss14` without factors created
     and without missing data explicitly declared
-  - `kerrich` - A data set containing 2000 trials of coin flips by [John
+-   `kerrich` - A data set containing 2000 trials of coin flips by [John
     Edmund Kerrich](https://en.wikipedia.org/wiki/John_Edmund_Kerrich)
 
 ### Usage
@@ -73,13 +72,13 @@ str(autoData)
 If you are interested in the original data/code used to create the
 included data, you can find them at:
 
-  - `auto17` is documented in [Chris’s `autoData`
+-   `auto17` is documented in [Chris’s `autoData`
     repository](https://github.com/chris-prener/autoData)
-  - `childMortality` is documented in [Chris’s `childMortality`
+-   `childMortality` is documented in [Chris’s `childMortality`
     repository](https://github.com/chris-prener/childMortality)
-  - `gss14` and `gss14_simple` are documented in [Chris’s `gss14`
+-   `gss14` and `gss14_simple` are documented in [Chris’s `gss14`
     repository](https://github.com/chris-prener/gss14)
-  - `kerrich` is documented in the [`extdata`
+-   `kerrich` is documented in the [`extdata`
     directory](/inst/extdata/kerrich.R)
 
 ## R Markdown Template
