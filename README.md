@@ -9,7 +9,6 @@ Workflow](https://github.com/chris-prener/testDriveR/actions/workflows/R-CMD-che
 [![cran
 checks](https://cranchecks.info/badges/worst/testDriveR)](https://cran.r-project.org/web/checks/check_results_testDriveR.html)
 [![Downloads](https://cranlogs.r-pkg.org/badges/testDriveR?color=brightgreen)](https://www.r-pkg.org/pkg/testDriveR)
-
 [![DOI](https://zenodo.org/badge/95270521.svg)](https://zenodo.org/badge/latestdoi/95270521)
 
 The goal of `testDriveR` is to provide data sets for teaching statistics
