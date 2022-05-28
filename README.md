@@ -15,14 +15,14 @@ The goal of `testDriveR` is to provide data sets for teaching statistics
 and data science courses. This package includes a sample of data from
 John Edmund Kerrich’s famous coinflip experiment. These are data that I
 used for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io)
-at [Saint Louis University](https://slu.edu).
+at [Saint Louis University](https://www.slu.edu).
 
 The package also includes an R Markdown template for completing
 assignments. This was the *required* format for authoring R Markdown
 documents in my courses [SOC 4015 / SOC
 5050](https://slu-soc5050.github.io) and [SOC 4650 / SOC
 5650](https://slu-soc5650.github.io) at [Saint Louis
-University](https://slu.edu). A quick overview is included below.
+University](https://www.slu.edu). A quick overview is included below.
 
 ## Installation
 
@@ -96,5 +96,5 @@ knit, and initial code blocks for loading dependencies and data.
 ## Contributor Code of Conduct
 
 Please note that this project is released with a [Contributor Code of
-Conduct](.github/CODE_OF_CONDUCT.md). By participating in this project
-you agree to abide by its terms.
+Conduct](https://chris-prener.github.io/testDriveR/CODE_OF_CONDUCT.html).
+By participating in this project you agree to abide by its terms.

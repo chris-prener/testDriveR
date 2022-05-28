@@ -4,9 +4,7 @@
 ^\.Rproj\.user$
 ^README\.Rmd$
 ^README-.*\.png$
-^\.travis\.yml$
-^appveyor\.yml$
-^codecov\.yml$
-^docs$
+^index\.Rmd$
+^index\.md$
 ^.github$
 ^_pkgdown\.yml$

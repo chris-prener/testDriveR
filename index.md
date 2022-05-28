@@ -1,17 +1,3 @@
----
-output: github_document
----
-
-<!-- README.md is generated from README.Rmd. Please edit that file -->
-
-```{r, echo = FALSE}
-knitr::opts_chunk$set(
-  collapse = TRUE,
-  comment = "#>",
-  fig.path = "README-"
-)
-```
-
 # testDriveR <img src="man/figures/logo.png" align="right" />
 
 ![GitHub Workflow](https://github.com/chris-prener/testDriveR/actions/workflows/R-CMD-check.yaml/badge.svg)
@@ -62,7 +48,7 @@ If you are interested in the original data/code used to create the included data
 * `auto17` is documented in [Chris's `autoData` repository](https://github.com/chris-prener/autoData)
 * `childMortality` is documented in [Chris's `childMortality` repository](https://github.com/chris-prener/childMortality)
 * `gss14` and `gss14_simple` are documented in [Chris's `gss14` repository](https://github.com/chris-prener/gss14)
-* `kerrich` is documented in the [`extdata` directory](/inst/extdata/kerrich.R)
+* `kerrich` is documented in the [`extdata` directory](https://github.com/chris-prener/testDriveR/blob/main/inst/extdata/kerrich.R)
 
 ## R Markdown Template
 The package also includes a template that my students use for getting started with `R` based assignments. It can be accessed from within RStudio by going to `File > New File > R Markdown...` and then selecting `SLU Sociology Assignments` under `Template`:
@@ -72,4 +58,4 @@ The package also includes a template that my students use for getting started wi
 The template includes `YAML` for generating both `.nb.html` and `.md` output, a pre-formatted date that updates each time the document is knit, and initial code blocks for loading dependencies and data.
 
 ## Contributor Code of Conduct
-Please note that this project is released with a [Contributor Code of Conduct](https://chris-prener.github.io/testDriveR/CODE_OF_CONDUCT.html). By participating in this project you agree to abide by its terms.
+Please note that this project is released with a [Contributor Code of Conduct](CODE_OF_CONDUCT.html). By participating in this project you agree to abide by its terms.
