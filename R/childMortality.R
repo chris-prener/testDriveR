@@ -16,7 +16,7 @@
 #'   \item{estimate}{estimated mortality rate}
 #' }
 #'
-#' @source http://childmortality.org
+#' @source https://childmortality.org
 #'
 #' @examples
 #' str(childMortality)
