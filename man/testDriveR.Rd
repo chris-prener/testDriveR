@@ -3,7 +3,6 @@
 \docType{package}
 \name{testDriveR}
 \alias{testDriveR}
-\alias{testDriveR-package}
 \title{testDriveR: Teaching Data for Statistics and Data Science}
 \description{
 The goal of \code{testDriveR} is to provide data sets for teaching

@@ -4,12 +4,14 @@
 \name{kerrich}
 \alias{kerrich}
 \title{Kerrich Coin Toss Trial Outcomes}
-\format{A data frame with 1216 rows and 21 variables:
+\format{
+A data frame with 1216 rows and 21 variables:
 \describe{
   \item{id}{trial}
   \item{outcome}{outcome of each trial; TRUE = heads, FALSE = tails}
   \item{average}{cumulative mean of outcomes}
-}}
+}
+}
 \source{
 https://stats.stackexchange.com/questions/76663/john-kerrich-coin-flip-data/77044#77044
 

@@ -4,7 +4,8 @@
 \name{auto17}
 \alias{auto17}
 \title{Model Year 2017 Vehicles}
-\format{A data frame with 1216 rows and 21 variables:
+\format{
+A data frame with 1216 rows and 21 variables:
 \describe{
   \item{id}{DOT vehicle ID number}
   \item{mfr}{vehicle manufacturer}
@@ -27,7 +28,8 @@
   \item{airAsp}{air aspiration method}
   \item{driveStr}{vehicle drive type, abbrev.}
   \item{driveStr2}{vehicle drive type, full}
-}}
+}
+}
 \source{
 https://www.fueleconomy.gov/feg/download.shtml
 }

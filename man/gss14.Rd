@@ -4,7 +4,8 @@
 \name{gss14}
 \alias{gss14}
 \title{2014 General Social Survey}
-\format{A data frame with 2538 rows and 19 variables:
+\format{
+A data frame with 2538 rows and 19 variables:
 \describe{
   \item{YEAR}{GSS year for this respondent}
   \item{INCOME06}{Total family income (2006 version)}
@@ -25,7 +26,8 @@
   \item{WRKSTAT}{Labor force status}
   \item{ID_}{Respondent id number}
   \item{BALLOT}{Ballot used for interview}
-}}
+}
+}
 \source{
 https://gssdataexplorer.norc.org
 }
