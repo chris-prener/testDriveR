@@ -81,8 +81,8 @@
 <div class="page-header"><h1 id="testdriver-">testDriveR <img src="reference/figures/logo.png" align="right"><a class="anchor" aria-label="anchor" href="#testdriver-"></a>
 </h1></div>
 
-<p>The goal of <code>testDriveR</code> is to provide data sets for teaching statistics and data science courses. This package includes a sample of data from John Edmund Kerrich’s famous coinflip experiment. These are data that I used for teaching <a href="https://slu-soc5050.github.io" class="external-link">SOC 4015 / SOC 5050</a> at <a href="https://slu.edu" class="external-link">Saint Louis University</a>.</p>
-<p>The package also includes an R Markdown template for completing assignments. This was the <em>required</em> format for authoring R Markdown documents in my courses <a href="https://slu-soc5050.github.io" class="external-link">SOC 4015 / SOC 5050</a> and <a href="https://slu-soc5650.github.io" class="external-link">SOC 4650 / SOC 5650</a> at <a href="https://slu.edu" class="external-link">Saint Louis University</a>. A quick overview is included below.</p>
+<p>The goal of <code>testDriveR</code> is to provide data sets for teaching statistics and data science courses. This package includes a sample of data from John Edmund Kerrich’s famous coinflip experiment. These are data that I used for teaching <a href="https://slu-soc5050.github.io" class="external-link">SOC 4015 / SOC 5050</a> at <a href="https://www.slu.edu" class="external-link">Saint Louis University</a>.</p>
+<p>The package also includes an R Markdown template for completing assignments. This was the <em>required</em> format for authoring R Markdown documents in my courses <a href="https://slu-soc5050.github.io" class="external-link">SOC 4015 / SOC 5050</a> and <a href="https://slu-soc5650.github.io" class="external-link">SOC 4650 / SOC 5650</a> at <a href="https://www.slu.edu" class="external-link">Saint Louis University</a>. A quick overview is included below.</p>
 <div class="section level2">
 <h2 id="installation">Installation<a class="anchor" aria-label="anchor" href="#installation"></a>
 </h2>
@@ -90,8 +90,7 @@
 <div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="https://rdrr.io/r/utils/install.packages.html" class="external-link">install.packages</a></span><span class="op">(</span><span class="st">"testDriveR"</span><span class="op">)</span></code></pre></div>
 <p>You can also install the development version of <code>testDriveR</code> from <a href="https://github.com/chris-prener/testDriveR" class="external-link">Github</a> with <code>remotes</code>:</p>
-<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
-<code class="sourceCode R"><span class="fu">remotes</span><span class="fu">::</span><span class="fu">install_github</span><span class="op">(</span><span class="st">"chris-prener/testDriveR"</span><span class="op">)</span></code></pre></div>
+<p><code>{r gh-installation, eval = FALSE} remotes::install_github("chris-prener/testDriveR")</code></p>
 </div>
 <div class="section level2">
 <h2 id="current-data">Current Data<a class="anchor" aria-label="anchor" href="#current-data"></a>
@@ -114,7 +113,7 @@
 <h3 id="usage">Usage<a class="anchor" aria-label="anchor" href="#usage"></a>
 </h3>
 <p>Once loaded, the data contained in <code>testDriveR</code> can be loaded into data frames in your global environment and then explored. For example, to load the <code>auto17</code> data:</p>
-<div class="sourceCode" id="cb3"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb2"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="st"><a href="https://github.com/chris-prener/testDriveR" class="external-link">"testDriveR"</a></span><span class="op">)</span>
 <span class="va">autoData</span> <span class="op">&lt;-</span> <span class="va">auto17</span>
 <span class="fu"><a href="https://rdrr.io/r/utils/str.html" class="external-link">str</a></span><span class="op">(</span><span class="va">autoData</span><span class="op">)</span></code></pre></div>
@@ -134,7 +133,7 @@
 <code>gss14</code> and <code>gss14_simple</code> are documented in <a href="https://github.com/chris-prener/gss14" class="external-link">Chris’s <code>gss14</code> repository</a>
 </li>
 <li>
-<code>kerrich</code> is documented in the <a href="/inst/extdata/kerrich.R"><code>extdata</code> directory</a>
+<code>kerrich</code> is documented in the <a href="https://github.com/chris-prener/testDriveR/blob/main/inst/extdata/kerrich.R" class="external-link"><code>extdata</code> directory</a>
 </li>
 </ul>
 </div>
