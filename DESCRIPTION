@@ -18,7 +18,7 @@ Description: Provides data sets for teaching statistics and data science courses
     also contains an R Markdown template with the required formatting for 
     assignments in my former courses.
 License: GPL-3
-URL: https://chris-prener.github.io/testDriveR, https://github.com/chris-prener/testDriveR
+URL: https://chris-prener.github.io/testDriveR/, https://github.com/chris-prener/testDriveR
 BugReports: https://github.com/chris-prener/testDriveR/issues
 Encoding: UTF-8
 LazyData: true
