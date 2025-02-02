@@ -1,48 +1,17 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/404.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/CODE_OF_CONDUCT.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/CONTRIBUTING.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/LICENSE-text.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/PULL_REQUEST_TEMPLATE.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/index.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/news/index.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/reference/auto17.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/reference/childMortality.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/reference/gss14.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/reference/gss14_simple.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/reference/kerrich.html</loc>
-  </url>
-  <url>
-    <loc>https://chris-prener.github.io/testDrieR/reference/testDriveR.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://chris-prener.github.io/testDriveR/404.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/CODE_OF_CONDUCT.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/CONTRIBUTING.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/LICENSE-text.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/PULL_REQUEST_TEMPLATE.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/authors.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/index.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/news/index.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/reference/auto17.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/reference/childMortality.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/reference/gss14.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/reference/gss14_simple.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/reference/index.html</loc></url>
+<url><loc>https://chris-prener.github.io/testDriveR/reference/kerrich.html</loc></url>
 </urlset>
+
