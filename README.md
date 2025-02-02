@@ -6,9 +6,9 @@
 ![GitHub
 Workflow](https://github.com/chris-prener/testDriveR/actions/workflows/R-CMD-check.yaml/badge.svg)
 [![CRAN_status_badge](https://www.r-pkg.org/badges/version/testDriveR)](https://cran.r-project.org/package=testDriveR)
-[![cran
-checks](https://cranchecks.info/badges/worst/testDriveR)](https://cran.r-project.org/web/checks/check_results_testDriveR.html)
+[![cranchecks](https://badges.cranchecks.info/worst/testDriveR.svg)](https://cran.r-project.org/web/checks/check_results_testDriveR.html)
 [![Downloads](https://cranlogs.r-pkg.org/badges/testDriveR?color=brightgreen)](https://www.r-pkg.org/pkg/testDriveR)
+[![DOI](https://img.shields.io/badge/DOI-10.32614%2FCRAN.package.testDriveR-blue)](https://doi.org/10.32614/CRAN.package.testDriveR)
 [![DOI](https://zenodo.org/badge/95270521.svg)](https://zenodo.org/badge/latestdoi/95270521)
 
 The goal of `testDriveR` is to provide data sets for teaching statistics
