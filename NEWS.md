@@ -1,3 +1,8 @@
+# testDriveR 0.5.3
+
+* Remove package-level documentation
+* Update GitHub Actions workflow
+
 # testDriveR 0.5.2
 
 * Update maintainer contact information

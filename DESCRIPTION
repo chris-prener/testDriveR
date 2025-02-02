@@ -1,23 +1,29 @@
 Package: testDriveR
 Type: Package
 Title: Teaching Data for Statistics and Data Science
-Version: 0.5.2
-Authors@R: person("Christopher", "Prener", , "chris.prener@gmail.com", c("aut", "cre"),
-    comment = c(ORCID = "0000-0002-4310-9888"))
+Version: 0.5.3
+Authors@R: c(
+    person(
+        given = "Christopher", family = "Prener", email = "chris.prener@gmail.com", 
+        role = c("aut", "cre"), comment = c(ORCID = "0000-0002-4310-9888")
+    ),
+    person(given = "Bill", family = "Bradley", role = "dtc"),
+    person("NORC at the University of Chicago", role = "dtc"),
+    person("UN Inter-agency Group for Child Mortality Estimation", role = "dtc"),
+    person("U.S. Department of Energy", role = "dtc")
+    )
 Description: Provides data sets for teaching statistics and data science courses. 
     It includes a sample of data from John Edmund Kerrich's famous 
-    coinflip experiment. These are data that I used for teaching SOC 4015 / SOC 
-    5050 at Saint Louis University (SLU). The package also contains an R Markdown
-    template with the required formatting for assignments in my courses 
-    SOC 4015, SOC 4650, SOC 5050, and SOC 5650 at SLU.
+    coinflip experiment. These are data that I used for statistics. The package 
+    also contains an R Markdown template with the required formatting for 
+    assignments in my former courses.
 License: GPL-3
-URL: https://github.com/chris-prener/testDriveR
+URL: https://chris-prener.github.io/testDriveR, https://github.com/chris-prener/testDriveR
 BugReports: https://github.com/chris-prener/testDriveR/issues
 Encoding: UTF-8
 LazyData: true
-RoxygenNote: 7.1.2
+RoxygenNote: 7.3.2
 Suggests: 
-    dplyr,
     ggplot2,
     knitr,
     rmarkdown,

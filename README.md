@@ -13,7 +13,7 @@ checks](https://cranchecks.info/badges/worst/testDriveR)](https://cran.r-project
 
 The goal of `testDriveR` is to provide data sets for teaching statistics
 and data science courses. This package includes a sample of data from
-John Edmund Kerrich’s famous coinflip experiment. These are data that I
+John Edmund Kerrich’s famous coin flip experiment. These are data that I
 used for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io)
 at [Saint Louis University](https://www.slu.edu).
 
@@ -43,16 +43,16 @@ remotes::install_github("chris-prener/testDriveR")
 
 The package currently contains five data tables:
 
--   `auto17` - A data set containing model year 2017 vehicles for sale
-    in the United States
--   `childMortality` - A data set containing childhood mortality time
-    series data by country from UNICEF
--   `gss14` - A data set containing a selection of variables related to
-    work and education from the 2014 General Social Survey
--   `gss14_simple` - A simple version of `gss14` without factors created
-    and without missing data explicitly declared
--   `kerrich` - A data set containing 2000 trials of coin flips by [John
-    Edmund Kerrich](https://en.wikipedia.org/wiki/John_Edmund_Kerrich)
+- `auto17` - A data set containing model year 2017 vehicles for sale in
+  the United States
+- `childMortality` - A data set containing childhood mortality time
+  series data by country from UNICEF
+- `gss14` - A data set containing a selection of variables related to
+  work and education from the 2014 General Social Survey
+- `gss14_simple` - A simple version of `gss14` without factors created
+  and without missing data explicitly declared
+- `kerrich` - A data set containing 2000 trials of coin flips by [John
+  Edmund Kerrich](https://en.wikipedia.org/wiki/John_Edmund_Kerrich)
 
 ### Usage
 
@@ -71,14 +71,14 @@ str(autoData)
 If you are interested in the original data/code used to create the
 included data, you can find them at:
 
--   `auto17` is documented in [Chris’s `autoData`
-    repository](https://github.com/chris-prener/autoData)
--   `childMortality` is documented in [Chris’s `childMortality`
-    repository](https://github.com/chris-prener/childMortality)
--   `gss14` and `gss14_simple` are documented in [Chris’s `gss14`
-    repository](https://github.com/chris-prener/gss14)
--   `kerrich` is documented in the [`extdata`
-    directory](/inst/extdata/kerrich.R)
+- `auto17` is documented in [Chris’s `autoData`
+  repository](https://github.com/chris-prener/autoData)
+- `childMortality` is documented in [Chris’s `childMortality`
+  repository](https://github.com/chris-prener/childMortality)
+- `gss14` and `gss14_simple` are documented in [Chris’s `gss14`
+  repository](https://github.com/chris-prener/gss14)
+- `kerrich` is documented in the [`extdata`
+  directory](/inst/extdata/kerrich.R)
 
 ## R Markdown Template
 

@@ -6,7 +6,7 @@
 [![Downloads](https://cranlogs.r-pkg.org/badges/testDriveR?color=brightgreen)](https://www.r-pkg.org/pkg/testDriveR)
 [![DOI](https://zenodo.org/badge/95270521.svg)](https://zenodo.org/badge/latestdoi/95270521)
 
-The goal of `testDriveR` is to provide data sets for teaching statistics and data science courses. This package includes a sample of data from John Edmund Kerrich's famous coinflip experiment. These are data that I used for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://www.slu.edu).
+The goal of `testDriveR` is to provide data sets for teaching statistics and data science courses. This package includes a sample of data from John Edmund Kerrich's famous coin flip experiment. These are data that I used for teaching [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) at [Saint Louis University](https://www.slu.edu).
 
 The package also includes an R Markdown template for completing assignments. This was the *required* format for authoring R Markdown documents in my courses [SOC 4015 / SOC 5050](https://slu-soc5050.github.io) and [SOC 4650 / SOC 5650](https://slu-soc5650.github.io) at [Saint Louis University](https://www.slu.edu). A quick overview is included below.
 
